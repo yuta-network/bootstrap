@@ -1,0 +1,16 @@
+$TTL 86400
+@ IN SOA g4retail.local. admin.g4retail.local. (
+         2022072752 ;Serial
+         3600 ;Refresh
+         1800 ;Retry
+         604800 ;Expire
+         86400 ;Minimum TTL
+)
+;Your Name Server Info
+@ IN NS dns-ns1.g4retail.local.
+dns-ns1 IN A 192.168.1.2
+;Reverse Lookup for Your DNS Server
+40 IN PTR dns-ns.g4retail.local.
+;PTR Record IP address to HostName
+5 IN PTR www.g4retail.local.
+3 IN PTR mail.g4retail.local.

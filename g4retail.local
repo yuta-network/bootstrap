@@ -1,0 +1,14 @@
+$TTL 86400
+@ IN SOA dns-ns1.g4retail.local. admin.g4retail.local. (
+2020011800 ;Serial
+3600 ;Refresh
+1800 ;Retry
+604800 ;Expire
+86400 ;Minimum TTL
+)
+
+@ IN NS dns-ns1.g4retail.local.
+dns-ns1 IN A 192.168.1.2
+g4retail.local. IN MX 10 mail-pri.g4retail.local.
+www  IN   A   192.168.1.5
+mail-pri IN   A   192.168.1.3
